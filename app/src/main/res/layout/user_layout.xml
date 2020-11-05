@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#93B4D5"
+    android:elevation="4dp"
+    android:layout_margin="7dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_fullName_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_email_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_phone_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_bus_name_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_bus_type_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_from_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_to_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txt_time_bk_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView >

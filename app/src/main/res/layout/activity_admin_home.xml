@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/img_log"
+            android:layout_width="150dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:transitionName="img_trs"
+            app:srcCompat="@drawable/bus_land_page" />
+
+        <TextView
+            android:id="@+id/txt_log_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:fontFamily="@font/aladin"
+            android:text="Hi, Welcome to Admin Panel"
+            android:textColor="#000407"
+            android:textSize="40sp"
+            android:transitionName="txt_trs" />
+
+        <TextView
+            android:id="@+id/txt_log_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alice"
+            android:text="Select Button bellow"
+            android:textColor="#000407"
+            android:textSize="19sp"
+            android:transitionName="txt_sm_trs" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="181dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:text="ADD BUS"
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="181dp"
+        android:layout_height="64dp"
+        android:text="View Bookings"
+        android:textColor="#000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.385" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_new"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BusDetailsActivity">
+
+    <include
+        layout="@layout/appbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/txt_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:text="BUS CATEGORIES"
+            android:textSize="19sp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_detail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:hint="Bus Name"
+        android:paddingTop="25dp"
+        app:startIconDrawable="@drawable/ic_baseline_directions_bus_24">
+
+        <AutoCompleteTextView
+            android:id="@+id/bus_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="none"
+            android:textColor="#000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:hint="Bus Type"
+        android:paddingTop="25dp"
+        app:startIconDrawable="@drawable/ic_baseline_directions_bus_24">
+
+        <AutoCompleteTextView
+            android:id="@+id/bus_type_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="none"
+            android:textColor="#000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:hint="Departure Time"
+        android:paddingTop="25dp"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24">
+
+        <AutoCompleteTextView
+            android:id="@+id/bus_time_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="none"
+            android:textColor="#000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/book_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROCEED BOOKING"
+        android:textSize="19sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>
